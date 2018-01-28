@@ -13,7 +13,7 @@ public class BaseDao<T>{
 	public void setHibernateTemplate(HibernateTemplate hibernateTemplate) {
 		this.hibernateTemplate = hibernateTemplate;
 	}
-	public BaseDao(){
-		
+	public void sava(T t){
+		this.hibernateTemplate.save(t);
 	}
 }
